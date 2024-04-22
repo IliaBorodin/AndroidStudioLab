@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Book Diary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_button_description">Some</string>
+    <string name="status_book">Status</string>
+    <string name="author_book">Author</string>
+    <string name="genre_book">Genre</string>
+    <string name="count_page">Page count</string>
+    <string name="name_book">Book name</string>
+    <string name="select_status">Сhoosing a status</string>
+    <string name="add">Add</string>
+    <string name="add_book">Add a book</string>
+    <string name="plus">+</string>
+    <string name="read_count">Enter the number of pages</string>
+    <string name="filter">Filter</string>
+
+</resources>

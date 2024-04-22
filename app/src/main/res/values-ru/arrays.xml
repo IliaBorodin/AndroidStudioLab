@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="status_array">
+        <item>Прочитано</item>
+        <item>Читаю</item>
+        <item>Буду читать</item>
+    </string-array>
+
+    <string-array name="status_filter">
+        <item>Все</item>
+        <item>Прочитано</item>
+        <item>Читаю</item>
+        <item>Буду читать</item>
+    </string-array>
+
+
+
+    <string-array name="author_array">
+
+    </string-array>
+</resources>

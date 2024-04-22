@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Книжный дневник</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Привет мир</string>
+    <string name="add_button_description">Что-то</string>
+    <string name="status_book">Статус</string>
+    <string name="author_book">Автор</string>
+    <string name="genre_book">Жанр</string>
+    <string name="count_page">Количество страниц</string>
+    <string name="name_book">Название книги</string>
+    <string name="select_status">Выбрать статус</string>
+    <string name="add">Добавить</string>
+    <string name="add_book">Добавить книгу</string>
+    <string name="plus">+</string>
+    <string name="read_count">Введите кол-во прочитанных страниц</string>
+    <string name="filter">Фильтрация</string>
+
+</resources>

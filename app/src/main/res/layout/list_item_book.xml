@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/coverImageView"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_cover" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/authorTextView"
+
+        android:src="@drawable/delete"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- Кнопка "Редактировать" -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@id/authorTextView"
+        android:layout_toStartOf="@id/deleteButton"
+        android:src="@drawable/more"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/coverImageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author Name"
+        android:textSize="16sp"
+        android:layout_below="@id/titleTextView"
+        android:layout_toEndOf="@id/coverImageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/genreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre"
+        android:textSize="16sp"
+        android:layout_below="@id/authorTextView"
+        android:layout_toEndOf="@id/coverImageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/pagesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Page Count"
+        android:textSize="16sp"
+        android:layout_below="@id/genreTextView"
+        android:layout_toEndOf="@id/coverImageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Status"
+        android:textSize="16sp"
+        android:layout_below="@id/pagesTextView"
+        android:layout_toEndOf="@id/coverImageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_below="@id/statusTextView"
+        android:layout_toEndOf="@id/coverImageView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
+

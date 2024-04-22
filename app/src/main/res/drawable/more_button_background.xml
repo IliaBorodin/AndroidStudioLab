@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон кнопки (закругленный прямоугольник) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" /> <!-- Радиус скругления углов -->
+            <solid android:color="@color/btn_color" /> <!-- Цвет фона кнопки -->
+        </shape>
+    </item>
+    <!-- Иконка на фоне кнопки -->
+    <item
+        android:drawable="@drawable/more"
+        android:gravity="center"
+        android:width="24dp"
+        android:height="24dp"/>  <!-- Расположение иконки по центру кнопки -->
+</layer-list>

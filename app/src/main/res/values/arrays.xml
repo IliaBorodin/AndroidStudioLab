@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="status_array">
+        <item>Read</item>
+        <item>Reading</item>
+        <item>Will read</item>
+    </string-array>
+
+    <string-array name="status_filter">
+        <item>All</item>
+        <item>Read</item>
+        <item>Reading</item>
+        <item>Will read</item>
+    </string-array>
+
+
+
+    <string-array name="author_array">
+
+    </string-array>
+</resources>

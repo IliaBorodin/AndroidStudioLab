@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AACDEA">
+
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_book"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/name_book"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_book"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleEditText" />
+
+        <!-- Кнопка для выбора обложки из галереи -->
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/plus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coverImageView"/>
+
+
+        <EditText
+            android:id="@+id/authorEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/author_book"
+            android:minHeight="48dp"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toEndOf="@id/coverImageView"
+            app:layout_constraintTop_toBottomOf="@+id/titleEditText"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/genreEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/genre_book"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toEndOf="@id/coverImageView"
+            app:layout_constraintTop_toBottomOf="@+id/authorEditText" />
+
+        <EditText
+            android:id="@+id/pageCountEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/count_page"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/coverImageView"
+            app:layout_constraintTop_toBottomOf="@+id/genreEditText" />
+
+        <Spinner
+            android:id="@+id/statusSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/status_array"
+            android:minHeight="48dp"
+            android:prompt="@string/select_status"
+
+
+            app:layout_constraintStart_toEndOf="@id/coverImageView"
+            app:layout_constraintTop_toBottomOf="@+id/pageCountEditText" />
+
+
+        <EditText
+            android:id="@+id/pageReadEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/read_count"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@+id/statusSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/pageCountEditText" />
+
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statusSpinner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
